@@ -8,9 +8,10 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 @SpringBootApplication
 @EnableJpaAuditing(auditorAwareRef = "auditorAware")
 public class GlycemicApplication {
-	
-	public static void main(String[] args) {
+
+    private GlycemicApplication() {}
+
+	static void main(String[] args) {
 		SpringApplication.run(GlycemicApplication.class, args);
 	}
-
 }
