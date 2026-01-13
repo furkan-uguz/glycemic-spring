@@ -12,7 +12,9 @@ on:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
-
+permissions:
+  contents: write
+  security-events: write
 jobs:
   build:
     environment: production
